@@ -1,0 +1,3 @@
+cp D:\pvzol\pvz_helper\build\index.html D:\pvzol\pvzol_server\src\main\resources\static\register.html
+cp D:\pvzol\pvz_helper\build\static\css\* D:\pvzol\pvzol_server\src\main\resources\static\static\css\
+cp D:\pvzol\pvz_helper\build\static\js\* D:\pvzol\pvzol_server\src\main\resources\static\static\js\

@@ -1,0 +1,247 @@
+
+.container{
+    display: flex;
+    height: 95vh;
+}
+.leftcontainer{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    align-items: center;
+}
+
+.leftcontainer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #000; /* 线的颜色 */
+}
+
+
+.userinfo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.userinfo img{
+    width: 100%;
+    height: 50%;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.userinfo p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.userorder{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+.userorder ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+    background-color: #53e8ea;
+}
+.userorder button{
+    margin: 10px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    margin: 0%  ;
+    background-color: #53e8ea;
+}
+.userorder button:hover{
+    background-color: #499ffb;
+}
+
+.startbutton{
+    position: absolute;
+    bottom: -50px; /* 将按钮的底部超出屏幕外1/5 */
+    right: -50px;
+    width: 300px; /* 圆形按钮的直径 */
+    height: 300px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: large;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.centerPart {
+    display: inline-block;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 20%;
+    height: 30%;
+    background-color: #53e8ea;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.centerPart p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.checkdelete button {
+display: inline-block;
+margin-left: 100px;
+}
+
+.checkdelete button:first-child {
+margin-left: 0; /* 第一个按钮不需要左边距 */
+}
+
+
+
+.rightcontainer{
+display: flex;
+flex-direction: column;
+margin-left: auto;
+width: 15%;
+height: 100%;
+align-items: center;
+}
+
+.rightcontainer button{
+margin: 10px;
+width: 80%;
+font-size: 16px;
+border: none;
+margin: 0%  ;
+background-color: #53e8ea;
+}
+
+.rightcontainer button:hover{
+background-color: #499ffb;
+}
+.rightcontainer button:last-child{
+margin-bottom: 0;
+justify-content: center;
+}
+
+.checkdeletebutton {
+    padding: 50px 20px;
+    margin: 10px;
+    width: 80%;
+    font-size: 16px;
+    }
+
+.account{
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 80%;
+padding: 10px;
+text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* 下拉内容中的消息样式 */
+  .dropdown-content p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* 显示下拉内容 */
+  .show {
+    display: block;
+  }
+
+.account p{
+font-size: 20px;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.addAccountButton{
+display: flex;
+margin: 0 auto;
+width: 50%;
+height: 5%;
+justify-content: center;
+}
+.accountList{
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: center;
+}
+
+.accountList ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    background-color: #53e8ea;
+}
+
+.accountList ul li{
+list-style: none;
+font-size: 20px;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+
+.accountList ul li button{
+margin: 0;
+padding: 0;
+border: none;   
+background-color: #53e8ea;
+}
